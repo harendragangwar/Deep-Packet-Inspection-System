@@ -3,7 +3,6 @@
 #include <iomanip>
 #include <algorithm>
 #include <cctype>
-
 namespace DPI {
 
 std::string FiveTuple::toString() const {
@@ -66,7 +65,6 @@ AppType sniToAppType(const std::string& sni) {
                    [](unsigned char c) { return std::tolower(c); });
     
     // Check for known patterns
-    // Google (including YouTube, which is owned by Google)
     if (lower_sni.find("google") != std::string::npos ||
         lower_sni.find("gstatic") != std::string::npos ||
         lower_sni.find("googleapis") != std::string::npos ||
