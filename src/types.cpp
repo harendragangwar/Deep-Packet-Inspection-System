@@ -25,7 +25,6 @@ std::string FiveTuple::toString() const {
     
     return ss.str();
 }
-
 std::string appTypeToString(AppType type) {
     switch (type) {
         case AppType::UNKNOWN:    return "Unknown";
