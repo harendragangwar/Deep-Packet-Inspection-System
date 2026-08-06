@@ -30,7 +30,6 @@ void printPacketSummary(const ParsedPacket& pkt, int packet_num) {
         std::cout << " (ARP)";
     }
     std::cout << "\n";
-    
     // IP layer
     if (pkt.has_ip) {
         std::cout << "\n[IPv" << static_cast<int>(pkt.ip_version) << "]\n";
