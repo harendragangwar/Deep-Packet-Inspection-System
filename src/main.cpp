@@ -5,7 +5,6 @@
 #include "packet_parser.h"
 
 using namespace PacketAnalyzer;
-
 void printPacketSummary(const ParsedPacket& pkt, int packet_num) {
     // Format timestamp
     std::time_t time = pkt.timestamp_sec;
