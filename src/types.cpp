@@ -8,7 +8,7 @@ namespace DPI {
 std::string FiveTuple::toString() const {
     std::ostringstream ss;
     
-    // Format IP addresses
+    
     auto formatIP = [](uint32_t ip) {
         std::ostringstream s;
         s << ((ip >> 0) & 0xFF) << "."
@@ -25,6 +25,7 @@ std::string FiveTuple::toString() const {
     
     return ss.str();
 }
+
 std::string appTypeToString(AppType type) {
     switch (type) {
         case AppType::UNKNOWN:    return "Unknown";
